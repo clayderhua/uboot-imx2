@@ -941,6 +941,21 @@
 			>;
 		};
 
+		pinctrl_usdhc2_2: usdhc2grp-2 {
+                        fsl,pins = <
+                                MX6QDL_PAD_SD2_CMD__SD2_CMD    0x17059
+                                MX6QDL_PAD_SD2_CLK__SD2_CLK    0x10059
+                                MX6QDL_PAD_SD2_DAT0__SD2_DATA0 0x17059
+                                MX6QDL_PAD_SD2_DAT1__SD2_DATA1 0x17059
+                                MX6QDL_PAD_SD2_DAT2__SD2_DATA2 0x17059
+                                MX6QDL_PAD_SD2_DAT3__SD2_DATA3 0x17059
+								MX6QDL_PAD_GPIO_2__GPIO1_IO02           0x80000000      /* SD card - SD2_WP */
+                                MX6QDL_PAD_GPIO_4__GPIO1_IO04           0x80000000      /* SD card - SD2_CD */
+								
+                       >;
+                };
+
+
 		pinctrl_usdhc3: usdhc3grp {
 			fsl,pins = <
 				MX6QDL_PAD_SD3_CMD__SD3_CMD		0x17059
